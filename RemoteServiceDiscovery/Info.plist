@@ -15,10 +15,10 @@
 	<key>CFBundlePackageType</key>
 	<string>FMWK</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.0</string>
+	<string>1336.255.1</string>
 	<key>CFBundleVersion</key>
 	<string>$(CURRENT_PROJECT_VERSION)</string>
 	<key>NSHumanReadableCopyright</key>
-	<string>Copyright © 2019 Aun-Ali Zaidi. All rights reserved.</string>
+	<string>Copyright © 2019 Apple Inc. All rights reserved.</string>
 </dict>
 </plist>
