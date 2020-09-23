@@ -12,7 +12,6 @@
 		16A76B28231E9F4100F6B960 /* RemoteServiceDiscovery.h in Headers */ = {isa = PBXBuildFile; fileRef = 16A76B1A231E9F4100F6B960 /* RemoteServiceDiscovery.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		16A76B36231EA2E000F6B960 /* OS_remote_device.h in Headers */ = {isa = PBXBuildFile; fileRef = 16A76B34231EA2E000F6B960 /* OS_remote_device.h */; };
 		16A76B37231EA2E000F6B960 /* OS_remote_device.m in Sources */ = {isa = PBXBuildFile; fileRef = 16A76B35231EA2E000F6B960 /* OS_remote_device.m */; };
-		16A76B39231F15E000F6B960 /* XPCService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16A76B38231F15E000F6B960 /* XPCService.framework */; };
 		16A76B3C231F269B00F6B960 /* OS_remote_device_browser.h in Headers */ = {isa = PBXBuildFile; fileRef = 16A76B3A231F269B00F6B960 /* OS_remote_device_browser.h */; };
 		16A76B3D231F269B00F6B960 /* OS_remote_device_browser.m in Sources */ = {isa = PBXBuildFile; fileRef = 16A76B3B231F269B00F6B960 /* OS_remote_device_browser.m */; };
 		16A76B3F231F4DDE00F6B960 /* libSystem.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 16A76B3E231F4DDE00F6B960 /* libSystem.tbd */; };
@@ -23,6 +22,9 @@
 		16A76B4B231F80F100F6B960 /* OS_remote_service.h in Headers */ = {isa = PBXBuildFile; fileRef = 16A76B49231F80F100F6B960 /* OS_remote_service.h */; };
 		16A76B4C231F80F100F6B960 /* OS_remote_service.m in Sources */ = {isa = PBXBuildFile; fileRef = 16A76B4A231F80F100F6B960 /* OS_remote_service.m */; };
 		16A76B4E231FFF4F00F6B960 /* internal_log.h in Headers */ = {isa = PBXBuildFile; fileRef = 16A76B4D231FFF4F00F6B960 /* internal_log.h */; };
+		16A76B512321B1D100F6B960 /* remoted_client.h in Headers */ = {isa = PBXBuildFile; fileRef = 16A76B502321B1D100F6B960 /* remoted_client.h */; };
+		16A76B552321E54200F6B960 /* remoted_client.m in Sources */ = {isa = PBXBuildFile; fileRef = 16A76B542321E54200F6B960 /* remoted_client.m */; };
+		16E57649251AEDAC00BCB46A /* System.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16E57648251AEDAC00BCB46A /* System.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,7 +46,6 @@
 		16A76B27231E9F4100F6B960 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		16A76B34231EA2E000F6B960 /* OS_remote_device.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OS_remote_device.h; sourceTree = "<group>"; };
 		16A76B35231EA2E000F6B960 /* OS_remote_device.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OS_remote_device.m; sourceTree = "<group>"; };
-		16A76B38231F15E000F6B960 /* XPCService.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XPCService.framework; path = ../../../../../../../../System/Library/PrivateFrameworks/XPCService.framework; sourceTree = "<group>"; };
 		16A76B3A231F269B00F6B960 /* OS_remote_device_browser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OS_remote_device_browser.h; sourceTree = "<group>"; };
 		16A76B3B231F269B00F6B960 /* OS_remote_device_browser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OS_remote_device_browser.m; sourceTree = "<group>"; };
 		16A76B3E231F4DDE00F6B960 /* libSystem.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libSystem.tbd; path = usr/lib/libSystem.tbd; sourceTree = SDKROOT; };
@@ -55,6 +56,9 @@
 		16A76B49231F80F100F6B960 /* OS_remote_service.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OS_remote_service.h; sourceTree = "<group>"; };
 		16A76B4A231F80F100F6B960 /* OS_remote_service.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OS_remote_service.m; sourceTree = "<group>"; };
 		16A76B4D231FFF4F00F6B960 /* internal_log.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = internal_log.h; sourceTree = "<group>"; };
+		16A76B502321B1D100F6B960 /* remoted_client.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = remoted_client.h; sourceTree = "<group>"; };
+		16A76B542321E54200F6B960 /* remoted_client.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = remoted_client.m; sourceTree = "<group>"; };
+		16E57648251AEDAC00BCB46A /* System.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = System.framework; path = System/Library/Frameworks/System.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,8 +66,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				16E57649251AEDAC00BCB46A /* System.framework in Frameworks */,
 				16A76B3F231F4DDE00F6B960 /* libSystem.tbd in Frameworks */,
-				16A76B39231F15E000F6B960 /* XPCService.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -108,6 +112,7 @@
 				16A76B46231F802D00F6B960 /* OS_remote_pending_event.m */,
 				16A76B4A231F80F100F6B960 /* OS_remote_service.m */,
 				16A76B4D231FFF4F00F6B960 /* internal_log.h */,
+				16A76B542321E54200F6B960 /* remoted_client.m */,
 			);
 			path = RemoteServiceDiscovery;
 			sourceTree = "<group>";
@@ -124,8 +129,8 @@
 		16A76B31231EA07A00F6B960 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				16E57648251AEDAC00BCB46A /* System.framework */,
 				16A76B3E231F4DDE00F6B960 /* libSystem.tbd */,
-				16A76B38231F15E000F6B960 /* XPCService.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -139,6 +144,7 @@
 				16A76B41231F7E7E00F6B960 /* OS_remote_listening_service.h */,
 				16A76B45231F802D00F6B960 /* OS_remote_pending_event.h */,
 				16A76B49231F80F100F6B960 /* OS_remote_service.h */,
+				16A76B502321B1D100F6B960 /* remoted_client.h */,
 			);
 			path = Headers;
 			sourceTree = "<group>";
@@ -157,6 +163,7 @@
 				16A76B3C231F269B00F6B960 /* OS_remote_device_browser.h in Headers */,
 				16A76B36231EA2E000F6B960 /* OS_remote_device.h in Headers */,
 				16A76B28231E9F4100F6B960 /* RemoteServiceDiscovery.h in Headers */,
+				16A76B512321B1D100F6B960 /* remoted_client.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,6 +263,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				16A76B552321E54200F6B960 /* remoted_client.m in Sources */,
 				16A76B3D231F269B00F6B960 /* OS_remote_device_browser.m in Sources */,
 				16A76B37231EA2E000F6B960 /* OS_remote_device.m in Sources */,
 				16A76B4C231F80F100F6B960 /* OS_remote_service.m in Sources */,
@@ -339,7 +347,7 @@
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = macosx;
+				SDKROOT = macosx.internal;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -394,7 +402,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
-				SDKROOT = macosx;
+				SDKROOT = macosx.internal;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -418,7 +426,11 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.pear.xpc.RemoteServiceDiscovery;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SDKROOT)/usr/lib/system",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.apple.xpc.RemoteServiceDiscovery;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SYSTEM_FRAMEWORK_SEARCH_PATHS = (
@@ -446,7 +458,11 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.pear.xpc.RemoteServiceDiscovery;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SDKROOT)/usr/lib/system",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.apple.xpc.RemoteServiceDiscovery;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SYSTEM_FRAMEWORK_SEARCH_PATHS = (
