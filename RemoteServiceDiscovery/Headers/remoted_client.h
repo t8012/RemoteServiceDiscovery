@@ -12,9 +12,10 @@
 OS_ASSUME_NONNULL_BEGIN
 __BEGIN_DECLS
 
-dispatch_queue_t remoted_queue(void);
-xpc_connection_t remoted_conn(void);
+OS_EXPORT dispatch_queue_t remoted_queue(void);
+OS_EXPORT xpc_connection_t remoted_conn(void);
 
-os_log_t rsd_log(void);
+OS_EXPORT os_log_t rsd_log(void);
 
+__END_DECLS
 OS_ASSUME_NONNULL_END
